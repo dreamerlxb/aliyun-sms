@@ -24,10 +24,10 @@ module Aliyun
       end
     end
 
+    API_URL = 'http://dysmsapi.aliyuncs.com/'
+
     class << self
       attr_writer :configuration
-
-      API_URL = 'http://dysmsapi.aliyuncs.com/'
 
       def configuration
         @configuration ||= Configuration.new
